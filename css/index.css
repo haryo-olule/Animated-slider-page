@@ -167,22 +167,28 @@ nav {
   animation: fadeBackground 1s ease-in-out;
   width: 100vw;
   height: 100vh;
+
+}.bg-slide-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.dropbox.com/scl/fi/c7d94fcbdsvy61qul26tb/download-1.jpg?rlkey=tem8fz965g5xdd5hi06mb893f&raw=1');
 }
-.bg-slide-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/download-1.jpg');
-}
+
 .bg-slide-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/anime_Naruto.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.dropbox.com/scl/fi/uv8znftv8br2h17p1xcv0/anime-Naruto.jpg?rlkey=bxjdf76m1ika5bahiz6lbaooz&raw=1')
 }
+
 .bg-slide-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Toji_Fushiguro.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.dropbox.com/scl/fi/de5a0kv6ys5kyw54xlz0g/Toji-Fushiguro.jpg?rlkey=6tez4dn9g1xtla1lru33teoev&raw=1');
 }
 .bg-slide-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/download-2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.dropbox.com/scl/fi/gwgvmfafaga5y0wmm4bo8/download-2.jpg?rlkey=c6w1as70xabnx9klgwvcxavgw&raw=1');
 }
+
 .bg-slide-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/one_piece_wallpaper.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.dropbox.com/scl/fi/nk8a0ypovj04llq7h3070/one-piece-wallpaper.jpg?rlkey=a9fbz7zsuzify2nvzzxxfn3nm&raw=1');
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .home-text h1 { font-size: 2.5rem; }
