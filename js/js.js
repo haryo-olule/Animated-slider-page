@@ -37,6 +37,7 @@ prevButtons.forEach(button => {
 
 // Initialize slider display
 updateSlide();
+//Menu
 
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar');
