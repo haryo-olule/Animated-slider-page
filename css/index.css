@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-color: white;
+}
+:root {
+  --text-color: white;
+  --main-color: #333;
+  --bg-color: black;
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 6%;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: bolder;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.navbtn a {
+  color: white;
+  margin-left: 0.5rem;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.home-text {
+  color: var(--text-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem 6%;
+}
+
+.home-text h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 5vh;
+}
+
+.home-text h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-bottom: 2vh;
+}
+
+.home-text p {
+  width: 60%;
+  text-align: justify;
+  margin-bottom: 2vh;
+  font-size: 1.1rem;
+}
+
+.slider-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.slider-btn button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider-btn button:hover {
+  background-color: #555;
+}
+
+.home-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 2vh;
+}
+
+.home-col {
+  width: 20%;
+  height: 30vh;
+}
+
+.home-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-slide-1, .bg-slide-2, .bg-slide-3, .bg-slide-4, .bg-slide-5 {
+  background-size: cover;
+  background-position: center;
+  animation: fadeBackground 1s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-slide-1 { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/download\ \(1\).jpg'); }
+.bg-slide-2 { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/anime\ Naruto.jpg'); }
+.bg-slide-3 { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Toji\ Fushiguro.jpg'); }
+.bg-slide-4 { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/download\ \(2\).jpg'); }
+.bg-slide-5 { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/one piece wallpaper.jpg'); }
+
+@media screen and (max-width: 768px) {
+  .home-text h1 { font-size: 2.5rem; }
+  .home-text h2 { font-size: 1.5rem; }
+  .home-text p { width: 100%; font-size: 1rem; }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: -700%;
+    left: 20px;
+    width: 88%;
+  
+    padding: 10px;
+    border-radius: 10px;
+    transition: top 0.7s ease-in-out;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar.show {
+    top: 60px;
+  }
+  
+}
+
+
+@keyframes fadeBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Staggered slide-in animation for text */
+.home-text h2,
+.home-text h1,
+.home-text p,
+.slider-btn,
+.home-row {
+  animation: slideIn 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  opacity: 0; /* Ensures elements are invisible before animation */
+}
+
+.home-text h2 {
+  animation-delay: 0.3s;
+}
+
+.home-text h1 {
+  animation-delay: 0.5s;
+}
+
+.home-text p {
+  animation-delay: 0.7s;
+}
+
+.slider-btn {
+  animation-delay: 0.9s;
+}
+
+.home-row {
+  animation: slideIn 0.7s forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+
+
+/* Add a smooth background fade effect for each slide */
+.slider-item {
+  animation: fadeBackground 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.slider-item.active {
+  opacity: 1;
+}
+
+/* M
