@@ -35,13 +35,24 @@ prevButtons.forEach(button => {
     });
 });
 
+
+
+
 // Initialize slider display
 updateSlide();
 //Menu
 
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar');
+const close = document.querySelector(".X");
 
 hamburger.addEventListener('click', () => {
     navbar.classList.toggle('show');
+    
+  
 });
+
+close.addEventListener('click', () =>{
+   navbar.classList.remove('show');
+});
+

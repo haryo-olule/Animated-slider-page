@@ -86,7 +86,12 @@ nav {
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
-
+.X {
+  display: none;
+  font-size: 24px;
+  color: var(--text-color);
+  cursor: pointer;
+}
 .hamburger {
   display: none;
   font-size: 24px;
@@ -148,11 +153,13 @@ nav {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 2vh;
+
 }
 
 .home-col {
   width: 20%;
   height: 30vh;
+  cursor: pointer;
 }
 
 .home-col img {
@@ -214,6 +221,13 @@ nav {
   .hamburger {
     display: block;
     cursor: pointer;
+  }
+  .X {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right: 0;
   }
 
   .navbar.show {
